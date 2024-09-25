@@ -1,0 +1,1702 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/5/2024 9:12:20 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="MOHAMED"
+  DTS:CreatorName="MOHAMED\Mohamed"
+  DTS:DTSID="{E5DC9376-BE48-484A-B42D-3A44533AD899}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="61"
+  DTS:VersionGUID="{ACBE3466-3BD9-4995-9AE9-91DC1A2830FD}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[PostgreSQL35W.postgres]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{B6382469-D285-4282-9779-71FD30E84315}"
+      DTS:ObjectName="PostgreSQL35W.postgres">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=postgres;Dsn=PostgreSQL35W;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA36EhU4/XGEOX3s4k9SlBCwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABWF4T/UhcrfcYUYS3obPQkSlHN8txPrt557xQrUxyFCwAAAAAOgAAAAAIAACAAAADUhV/zyMNNLOD+SSDBI/wKz5BX+1sNEtU6En61z/BzNBAAAABRE8hxUCdC1l4xCawMqdDWQAAAAJAWYjrK0aKNUpN8Omi/qUW0KrsALrFd6G0HbcZIxoKhOa8b85wdyEmkD1WK4HuZdkaldHxghcVZFg3KQ7SGcxg</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[PostgreSQL36W.postgres]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{D8CCE644-5C54-49CF-82FE-F6925F8144D9}"
+      DTS:ObjectName="PostgreSQL36W.postgres">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=postgres;Dsn=PostgreSQL36W;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA36EhU4/XGEOX3s4k9SlBCwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB8mA/fUWHAq3QOrvp/TtNgTl7f0OTb4Hdk6xfO4DXglAAAAAAOgAAAAAIAACAAAAAe+5f/TX/n781OyTCGwZwSfWNNpoftKbHlnypUWsl8MhAAAABH2pFSTaL1D00FBk65mbuGQAAAAHbtRd3iotxd9DYSKchLasiY/hmrYG/neWqLsYmVGzibfvW89j8AgAa6q8YYzPmbWgD24eQtSyv6jYJyUELRhiM</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[tech layoffs q1 Connection]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{CC359AB4-1F8F-4FED-83D1-41A7EDDE56D7}"
+      DTS:ObjectName="tech layoffs q1 Connection">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\DEPI Data Engineering\personalWork\Company layoffs\cleaned_tech_layoffs_q1.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="company_id"
+              DTS:DTSID="{2FF38A48-87D7-4F6F-ABBC-5DDD78D13363}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Company"
+              DTS:DTSID="{0041C374-DBD2-4E1F-92F9-E1B28538DED5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Location_HQ"
+              DTS:DTSID="{F0A441B8-F539-4644-B875-96DED9ADC59C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{B14EB0C6-4E53-4B16-A53E-766A5484CA49}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Continent"
+              DTS:DTSID="{56DC43FB-2F77-4929-A364-650B8D16214A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Laid_Off"
+              DTS:DTSID="{7E76246D-BAE2-41E3-B470-69138DC3EA1A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date_layoffs"
+              DTS:DTSID="{B214A2C3-B6FB-4711-999B-C1A3706BF61F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Percentage"
+              DTS:DTSID="{78984255-BF7A-424C-9441-455BE3FA4EEC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Company_Size_before_Layoffs"
+              DTS:DTSID="{378F4C5A-5866-4B18-BA34-92B2EC69F6D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Company_Size_after_layoffs"
+              DTS:DTSID="{90D18078-75A5-47F9-83B9-A2205789811C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Industry"
+              DTS:DTSID="{09375B89-D490-4B80-AA3A-6E051C702D42}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Money_Raised_in_$_mil"
+              DTS:DTSID="{392C5309-7BE0-49EE-B6A7-A8DEB6707873}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year"
+              DTS:DTSID="{AF477F09-39E1-4B18-B847-7636675DCF07}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="latitude"
+              DTS:DTSID="{321EAFE2-3D17-4AE0-9712-6D597743AAEB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="longitude"
+              DTS:DTSID="{A4FA9B57-10D3-40D2-B0FB-954C47D492A8}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[tech layoffs q2 Connection]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0C21056E-547B-4A41-AB56-9E50B431F16D}"
+      DTS:ObjectName="tech layoffs q2 Connection">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\DEPI Data Engineering\personalWork\Company layoffs\cleaned_tech_layoffs_q2.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="company_id"
+              DTS:DTSID="{F4B9F960-F9ED-41E0-885F-E8570525561A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Company"
+              DTS:DTSID="{5B7377A3-F8BD-4E62-90C4-A723D65C994B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Location_HQ"
+              DTS:DTSID="{890F4841-BAD9-44E2-8413-EF46FE555D46}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{553C3896-C3B9-4D76-872E-BA0F5ED29710}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Continent"
+              DTS:DTSID="{65D7A39D-9F72-4C58-8D4D-645D7C2BC666}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Laid_Off"
+              DTS:DTSID="{801A8941-F42B-4184-A933-4B22491A46B7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date_layoffs"
+              DTS:DTSID="{52DE06C9-215F-4EFE-8024-64AE05848A75}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Percentage"
+              DTS:DTSID="{11E914D9-1FA7-44F4-94F9-4B8A00B19FBF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Company_Size_before_Layoffs"
+              DTS:DTSID="{3AC72E2A-AE57-4514-AF9E-2C8F4D0DFBB4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Company_Size_after_layoffs"
+              DTS:DTSID="{53BE49FF-CF2C-4F7A-9570-C739262816D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Industry"
+              DTS:DTSID="{AC0C0543-03C9-4462-A79E-FC7F5E92531E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Money_Raised_in_$_mil"
+              DTS:DTSID="{2964A4CA-2DE5-4958-8E65-A314C350B9CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year"
+              DTS:DTSID="{B286A501-9619-43D4-AF27-8603A6657FDF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="latitude"
+              DTS:DTSID="{3E365AC7-5017-4DF1-8E3E-54F205D4A36C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="longitude"
+              DTS:DTSID="{342DB4C8-140A-46AB-AD2D-DE174A01B92B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[tech_layoffs_location]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{09DB441B-87DB-42AB-BD18-BA45048A1AC4}"
+      DTS:ObjectName="tech_layoffs_location">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="D:\DEPI Data Engineering\personalWork\Company layoffs\cleaned_tech_layoffs_location.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="location_HQ"
+              DTS:DTSID="{5CB847B6-2DD6-403F-B597-320D39211E67}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="State"
+              DTS:DTSID="{32A5AEEF-A9BE-4B1C-BAB8-C05F358860DA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{BE60D98E-4195-4E6B-9021-FEC6722503A2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="latitude"
+              DTS:DTSID="{1F03D29E-EE34-4FED-BC64-4FB6439AFAA5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="longitude"
+              DTS:DTSID="{7DE2846D-A802-4FE6-AB4A-14C62FEB12D3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{8A556B2D-50C6-422F-A240-0FD90F0B9000}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\cleaned employee details"
+              componentClassID="Microsoft.SSISODBCSrc"
+              contactInfo="ODBC Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="ODBC Source"
+              name="cleaned employee details"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName">"companies"."cleaned_employee_data"</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines how the component exposes CHAR columns. If False, CHAR columns are exposed as (multi-)byte strings (DT_STR), if True, CHAR columns are exposed as wide strings (DT_WSTR)"
+                  expressionType="Notify"
+                  name="ExposeCharColumnsAsUnicode">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for fetching data."
+                  expressionType="Notify"
+                  name="FetchMethod">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The mode used to access the database."
+                  expressionType="Notify"
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\cleaned employee details.Connections[ODBCConnection]"
+                  connectionManagerID="Package.ConnectionManagers[PostgreSQL36W.postgres]"
+                  connectionManagerRefId="Package.ConnectionManagers[PostgreSQL36W.postgres]"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output]"
+                  errorRowDisposition="FailComponent"
+                  name="ODBC Source Output"
+                  truncationRowDisposition="FailComponent">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[EEID]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[EEID]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[EEID]"
+                      name="EEID" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Full Name]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Full Name]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Full Name]"
+                      name="Full Name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Job Title]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Job Title]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Job Title]"
+                      name="Job Title" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Department]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Department]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Department]"
+                      name="Department" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Business Unit]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Business Unit]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Business Unit]"
+                      name="Business Unit" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Gender]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Gender]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Gender]"
+                      name="Gender" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Ethnicity]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Ethnicity]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Ethnicity]"
+                      name="Ethnicity" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Age]"
+                      dataType="i8"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Age]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Age]"
+                      name="Age" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Hire Date]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Hire Date]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Hire Date]"
+                      name="Hire Date" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Annual Salary]"
+                      dataType="i8"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Annual Salary]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Annual Salary]"
+                      name="Annual Salary" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Bonus %]"
+                      dataType="i8"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Bonus %]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Bonus %]"
+                      name="Bonus %" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Country]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Country]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Country]"
+                      name="Country" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[City]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[City]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[City]"
+                      name="City" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Exit Date]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Exit Date]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Exit Date]"
+                      name="Exit Date" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[EEID]"
+                      dataType="nText"
+                      name="EEID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Full Name]"
+                      dataType="nText"
+                      name="Full Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Job Title]"
+                      dataType="nText"
+                      name="Job Title" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Department]"
+                      dataType="nText"
+                      name="Department" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Business Unit]"
+                      dataType="nText"
+                      name="Business Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Gender]"
+                      dataType="nText"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Ethnicity]"
+                      dataType="nText"
+                      name="Ethnicity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Age]"
+                      dataType="i8"
+                      name="Age" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Hire Date]"
+                      dataType="nText"
+                      name="Hire Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Annual Salary]"
+                      dataType="i8"
+                      name="Annual Salary" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Bonus %]"
+                      dataType="i8"
+                      name="Bonus %" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Country]"
+                      dataType="nText"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[City]"
+                      dataType="nText"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Exit Date]"
+                      dataType="nText"
+                      name="Exit Date" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output]"
+                  isErrorOut="true"
+                  name="ODBC Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[EEID]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[EEID]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[EEID]"
+                      name="EEID" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Full Name]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Full Name]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Full Name]"
+                      name="Full Name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Job Title]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Job Title]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Job Title]"
+                      name="Job Title" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Department]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Department]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Department]"
+                      name="Department" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Business Unit]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Business Unit]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Business Unit]"
+                      name="Business Unit" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Gender]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Gender]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Gender]"
+                      name="Gender" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Ethnicity]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Ethnicity]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Ethnicity]"
+                      name="Ethnicity" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Age]"
+                      dataType="i8"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Age]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Age]"
+                      name="Age" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Hire Date]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Hire Date]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Hire Date]"
+                      name="Hire Date" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Annual Salary]"
+                      dataType="i8"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Annual Salary]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Annual Salary]"
+                      name="Annual Salary" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Bonus %]"
+                      dataType="i8"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Bonus %]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Bonus %]"
+                      name="Bonus %" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Country]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Country]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Country]"
+                      name="Country" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[City]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[City]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[City]"
+                      name="City" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Exit Date]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].ExternalColumns[Exit Date]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[Exit Date]"
+                      name="Exit Date" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\derive bonus in usd"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="derive bonus in usd"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\derive bonus in usd.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\derive bonus in usd.Inputs[Derived Column Input].Columns[Annual Salary]"
+                      cachedDataType="i8"
+                      cachedName="Annual Salary"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Annual Salary]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\derive bonus in usd.Inputs[Derived Column Input].Columns[Bonus %]"
+                      cachedDataType="i8"
+                      cachedName="Bonus %"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Bonus %]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\derive bonus in usd.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task\derive bonus in usd.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\derive bonus in usd.Outputs[Derived Column Output].Columns[bonus in usd]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\derive bonus in usd.Outputs[Derived Column Output].Columns[bonus in usd]"
+                      name="bonus in usd"
+                      precision="38"
+                      scale="6"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Annual Salary]} * (#{Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Bonus %]} / 100.0)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">[Annual Salary] * ([Bonus %] / 100.0)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\derive bonus in usd.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task\derive bonus in usd.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\derive bonus in usd.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\derive bonus in usd.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\derive bonus in usd.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\derive bonus in usd.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\employee details"
+              componentClassID="Microsoft.SSISODBCDst"
+              contactInfo="ODBC Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="ODBC Destination"
+              name="employee details"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName">"public"."employee details"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of rows inserted under the same transaction."
+                  expressionType="Notify"
+                  name="TransactionSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for inserting data. Possible values are 'Batch' or 'Row by row'."
+                  expressionType="Notify"
+                  name="InsertMethod">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\employee details.Connections[ODBCConnection]"
+                  connectionManagerID="Package.ConnectionManagers[PostgreSQL35W.postgres]"
+                  connectionManagerRefId="Package.ConnectionManagers[PostgreSQL35W.postgres]"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ODBC Destination Input"
+                  truncationRowDisposition="FailComponent">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].Columns[EEID]"
+                      cachedDataType="nText"
+                      cachedName="EEID"
+                      externalMetadataColumnId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[EEID]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[EEID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].Columns[Full Name]"
+                      cachedDataType="nText"
+                      cachedName="Full Name"
+                      externalMetadataColumnId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Full Name]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Full Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].Columns[Job Title]"
+                      cachedDataType="nText"
+                      cachedName="Job Title"
+                      externalMetadataColumnId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Job Title]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Job Title]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].Columns[Department]"
+                      cachedDataType="nText"
+                      cachedName="Department"
+                      externalMetadataColumnId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Department]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Department]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].Columns[Business Unit]"
+                      cachedDataType="nText"
+                      cachedName="Business Unit"
+                      externalMetadataColumnId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Business Unit]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Business Unit]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].Columns[Gender]"
+                      cachedDataType="nText"
+                      cachedName="Gender"
+                      externalMetadataColumnId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Gender]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Gender]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].Columns[Ethnicity]"
+                      cachedDataType="nText"
+                      cachedName="Ethnicity"
+                      externalMetadataColumnId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Ethnicity]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Ethnicity]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].Columns[Age]"
+                      cachedDataType="i8"
+                      cachedName="Age"
+                      externalMetadataColumnId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Age]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Age]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].Columns[Hire Date]"
+                      cachedDataType="nText"
+                      cachedName="Hire Date"
+                      externalMetadataColumnId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Hire Date]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Hire Date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].Columns[Annual Salary]"
+                      cachedDataType="i8"
+                      cachedName="Annual Salary"
+                      externalMetadataColumnId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Annual Salary]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Annual Salary]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].Columns[Bonus %]"
+                      cachedDataType="i8"
+                      cachedName="Bonus %"
+                      externalMetadataColumnId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Bonus %]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Bonus %]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].Columns[Country]"
+                      cachedDataType="nText"
+                      cachedName="Country"
+                      externalMetadataColumnId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Country]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Country]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].Columns[City]"
+                      cachedDataType="nText"
+                      cachedName="City"
+                      externalMetadataColumnId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[City]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[City]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].Columns[Exit Date]"
+                      cachedDataType="nText"
+                      cachedName="Exit Date"
+                      externalMetadataColumnId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Exit Date]"
+                      lineageId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output].Columns[Exit Date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].Columns[bonus in usd]"
+                      cachedDataType="numeric"
+                      cachedName="bonus in usd"
+                      cachedPrecision="38"
+                      cachedScale="6"
+                      externalMetadataColumnId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[bonus in usd]"
+                      lineageId="Package\Data Flow Task\derive bonus in usd.Outputs[Derived Column Output].Columns[bonus in usd]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Full Name]"
+                      dataType="nText"
+                      name="Full Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Job Title]"
+                      dataType="nText"
+                      name="Job Title" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Department]"
+                      dataType="nText"
+                      name="Department" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Business Unit]"
+                      dataType="nText"
+                      name="Business Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Gender]"
+                      dataType="wstr"
+                      length="40"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Ethnicity]"
+                      dataType="nText"
+                      name="Ethnicity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Age]"
+                      dataType="i4"
+                      name="Age" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Annual Salary]"
+                      dataType="i8"
+                      name="Annual Salary" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Bonus %]"
+                      dataType="i4"
+                      name="Bonus %" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Country]"
+                      dataType="nText"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[City]"
+                      dataType="nText"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Exit Date]"
+                      dataType="nText"
+                      name="Exit Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[bonus in usd]"
+                      dataType="numeric"
+                      name="bonus in usd"
+                      precision="28"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[Hire Date]"
+                      dataType="nText"
+                      name="Hire Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input].ExternalColumns[EEID]"
+                      dataType="nText"
+                      name="EEID" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\employee details.Outputs[ODBC Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ODBC Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\employee details.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\employee details.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\employee details.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\employee details.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\layoffs location"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="layoffs location"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\layoffs location.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[tech_layoffs_location]"
+                  connectionManagerRefId="Package.ConnectionManagers[tech_layoffs_location]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].Columns[location_HQ]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].ExternalColumns[location_HQ]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].Columns[location_HQ]"
+                      name="location_HQ"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].Columns[State]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].ExternalColumns[State]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].Columns[State]"
+                      name="State"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].Columns[Country]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].Columns[Country]"
+                      name="Country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].Columns[latitude]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].ExternalColumns[latitude]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].Columns[latitude]"
+                      name="latitude"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].Columns[longitude]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].ExternalColumns[longitude]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].Columns[longitude]"
+                      name="longitude"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].ExternalColumns[location_HQ]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="location_HQ" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].ExternalColumns[State]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="State" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].ExternalColumns[latitude]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="latitude" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].ExternalColumns[longitude]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="longitude" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\tech layoffs location"
+              componentClassID="Microsoft.SSISODBCDst"
+              contactInfo="ODBC Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="ODBC Destination"
+              name="tech layoffs location"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName">"public"."cleaned_tech_layoffs_location"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of rows inserted under the same transaction."
+                  expressionType="Notify"
+                  name="TransactionSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for inserting data. Possible values are 'Batch' or 'Row by row'."
+                  expressionType="Notify"
+                  name="InsertMethod">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\tech layoffs location.Connections[ODBCConnection]"
+                  connectionManagerID="Package.ConnectionManagers[PostgreSQL35W.postgres]"
+                  connectionManagerRefId="Package.ConnectionManagers[PostgreSQL35W.postgres]"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ODBC Destination Input"
+                  truncationRowDisposition="FailComponent">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input].Columns[location_HQ]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="location_HQ"
+                      externalMetadataColumnId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input].ExternalColumns[location_HQ]"
+                      lineageId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].Columns[location_HQ]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input].Columns[State]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="State"
+                      externalMetadataColumnId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input].ExternalColumns[State]"
+                      lineageId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].Columns[State]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input].Columns[Country]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Country"
+                      externalMetadataColumnId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input].ExternalColumns[Country]"
+                      lineageId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].Columns[Country]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input].Columns[latitude]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="latitude"
+                      externalMetadataColumnId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input].ExternalColumns[latitude]"
+                      lineageId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].Columns[latitude]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input].Columns[longitude]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="longitude"
+                      externalMetadataColumnId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input].ExternalColumns[longitude]"
+                      lineageId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output].Columns[longitude]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input].ExternalColumns[location_HQ]"
+                      dataType="nText"
+                      name="location_HQ" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input].ExternalColumns[State]"
+                      dataType="nText"
+                      name="State" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input].ExternalColumns[Country]"
+                      dataType="nText"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input].ExternalColumns[latitude]"
+                      dataType="numeric"
+                      name="latitude"
+                      precision="28"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input].ExternalColumns[longitude]"
+                      dataType="numeric"
+                      name="longitude"
+                      precision="28"
+                      scale="6" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\tech layoffs location.Outputs[ODBC Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ODBC Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\tech layoffs location.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\tech layoffs location.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\tech layoffs location.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\tech layoffs location.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Derived Column Output]"
+              endId="Package\Data Flow Task\employee details.Inputs[ODBC Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task\derive bonus in usd.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task\tech layoffs location.Inputs[ODBC Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task\layoffs location.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[ODBC Source Output]"
+              endId="Package\Data Flow Task\derive bonus in usd.Inputs[Derived Column Input]"
+              name="ODBC Source Output"
+              startId="Package\Data Flow Task\cleaned employee details.Outputs[ODBC Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Data Flow Task"
+          TopLeft="185.833323179848,128.266665774716" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="169.6,41.6"
+          Id="Package\Data Flow Task\tech layoffs location"
+          TopLeft="125.952374070647,171.971427375561" />
+        <NodeLayout
+          Size="147.2,41.6"
+          Id="Package\Data Flow Task\layoffs location"
+          TopLeft="121.071421956379,56.5809519874955" />
+        <NodeLayout
+          Size="156.8,41.6"
+          Id="Package\Data Flow Task\employee details"
+          TopLeft="393.90474150673,177.523808022303" />
+        <NodeLayout
+          Size="196,41.6"
+          Id="Package\Data Flow Task\cleaned employee details"
+          TopLeft="402.238074384749,30.1904757135067" />
+        <NodeLayout
+          Size="168,41.6"
+          Id="Package\Data Flow Task\derive bonus in usd"
+          TopLeft="354.619029367491,111.904760859562" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[ODBC Source Output]"
+          TopLeft="500.238074384749,71.7904757135067">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-61.6190450172576,40.1142851460547"
+              Start="0,0"
+              End="-61.6190450172576,32.6142851460547">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.0571425730274" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.0571425730274"
+                    Point2="0,20.0571425730274"
+                    Point3="-4,20.0571425730274" />
+                  <mssgle:LineSegment
+                    End="-57.6190450172576,20.0571425730274" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-57.6190450172576,20.0571425730274"
+                    Point2="-61.6190450172576,20.0571425730274"
+                    Point3="-61.6190450172576,24.0571425730274" />
+                  <mssgle:LineSegment
+                    End="-61.6190450172576,32.6142851460547" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="194.671421956379,98.1809519874955">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="16.0809521142683,73.7904753880653"
+              Start="0,0"
+              End="16.0809521142683,66.2904753880653">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.8952376940327" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.8952376940327"
+                    Point2="0,36.8952376940327"
+                    Point3="4,36.8952376940327" />
+                  <mssgle:LineSegment
+                    End="12.0809521142683,36.8952376940327" />
+                  <mssgle:CubicBezierSegment
+                    Point1="12.0809521142683,36.8952376940327"
+                    Point2="16.0809521142683,36.8952376940327"
+                    Point3="16.0809521142683,40.8952376940327" />
+                  <mssgle:LineSegment
+                    End="16.0809521142683,66.2904753880653" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output]"
+          TopLeft="438.619029367489,153.504760859562">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="33.6857121392378,24.0190471627409"
+              Start="0,0"
+              End="33.6857121392378,16.5190471627409">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.00952358137039" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.00952358137039"
+                    Point2="0,12.0095235813704"
+                    Point3="4,12.0095235813704" />
+                  <mssgle:LineSegment
+                    End="29.6857121392378,12.0095235813704" />
+                  <mssgle:CubicBezierSegment
+                    Point1="29.6857121392378,12.0095235813704"
+                    Point2="33.6857121392378,12.0095235813704"
+                    Point3="33.6857121392378,16.0095235813704" />
+                  <mssgle:LineSegment
+                    End="33.6857121392378,16.5190471627409" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\tech layoffs location">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\employee details">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\cleaned employee details">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
